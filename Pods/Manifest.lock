@@ -1,0 +1,48 @@
+PODS:
+  - Alamofire (4.9.1)
+  - AlamofireSwiftyJSON (1.0.2):
+    - Alamofire (~> 4.0)
+    - SwiftyJSON (~> 4.0)
+  - IQKeyboardManager (6.5.12)
+  - ReachabilitySwift (3)
+  - SDWebImage (5.18.0):
+    - SDWebImage/Core (= 5.18.0)
+  - SDWebImage/Core (5.18.0)
+  - SkyFloatingLabelTextField (3.8.0)
+  - SwiftyJSON (4.3.0)
+  - TextFieldEffects (1.6.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireSwiftyJSON
+  - IQKeyboardManager
+  - ReachabilitySwift (~> 3)
+  - SDWebImage
+  - SkyFloatingLabelTextField (~> 3.0)
+  - SwiftyJSON (~> 4.0)
+  - TextFieldEffects
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireSwiftyJSON
+    - IQKeyboardManager
+    - ReachabilitySwift
+    - SDWebImage
+    - SkyFloatingLabelTextField
+    - SwiftyJSON
+    - TextFieldEffects
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlamofireSwiftyJSON: 74ee3804bed06d07857daf1eeb1615c85dba3997
+  IQKeyboardManager: b1fd66ccf7a79095bdcc4a2735231586f744216e
+  ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
+  SDWebImage: 182830bcddc30cde95fbc60dfe4badc3553d94ba
+  SkyFloatingLabelTextField: 5a338412114808e961fe2d14ea2c5452c8b6e4aa
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+  TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
+
+PODFILE CHECKSUM: a5b9d0b6f8b58623a1704bf3d25e5da85be7f395
+
+COCOAPODS: 1.11.3

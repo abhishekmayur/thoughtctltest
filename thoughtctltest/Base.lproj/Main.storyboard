@@ -6,6 +6,7 @@
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -44,7 +45,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Ogm-tU-GOT">
+                            <searchBar contentMode="redraw" placeholder="search images" translatesAutoresizingMaskIntoConstraints="NO" id="Ogm-tU-GOT">
                                 <rect key="frame" x="0.0" y="103" width="393" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="0SZ-o4-LCH"/>
@@ -54,6 +55,31 @@
                                     <outlet property="delegate" destination="leh-dF-ER0" id="tNx-1O-Ylp"/>
                                 </connections>
                             </searchBar>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="6ll-jZ-o80">
+                                <rect key="frame" x="8" y="155" width="377" height="655"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dVg-Bp-HoY">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="MdO-v1-wQM">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="jq8-eP-upJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="6rA-YA-6Ym" id="NcK-ll-MG7"/>
+                                    <outlet property="delegate" destination="6rA-YA-6Ym" id="bUR-vk-bbT"/>
+                                </connections>
+                            </collectionView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6rA-YA-6Ym">
                                 <rect key="frame" x="8" y="155" width="377" height="655"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -76,26 +102,25 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Switch Animation" id="f2O-6U-Hab">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="i2i-WK-tdI">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="vDI-N4-JYg">
-                                <rect key="frame" x="290" y="5" width="87" height="34.333333333333336"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="GRID"/>
-                            </button>
+                        <barButtonItem key="rightBarButtonItem" title="LIST" id="N4u-2f-EUX">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="switchbuttonAction:" destination="leh-dF-ER0" id="rLa-6m-ysV"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="imagesTableView" destination="6rA-YA-6Ym" id="jej-Va-KC3"/>
+                        <outlet property="imagescollectionview" destination="6ll-jZ-o80" id="BBB-9m-vZG"/>
                         <outlet property="navigationcontroller" destination="f2O-6U-Hab" id="duH-xL-yC5"/>
                         <outlet property="searchbar" destination="Ogm-tU-GOT" id="KCl-ec-FsY"/>
+                        <outlet property="swicthbutton" destination="N4u-2f-EUX" id="pcY-nA-XOc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ueV-3f-JLd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="747" y="-13"/>
+            <point key="canvasLocation" x="745.80152671755718" y="-13.380281690140846"/>
         </scene>
     </scenes>
     <resources>

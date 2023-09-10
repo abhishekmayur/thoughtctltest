@@ -6,14 +6,8 @@ target 'thoughtctltest' do
   use_frameworks!
 
   # Pods for thoughtctltest
-    pod 'Alamofire'
-    pod 'SwiftyJSON', '~> 4.0'
-    pod 'ReachabilitySwift', '~> 3'
     pod 'SDWebImage'
-    pod 'AlamofireSwiftyJSON'	
     pod 'IQKeyboardManager'
-    pod 'SkyFloatingLabelTextField', '~> 3.0'
-    pod 'TextFieldEffects'
   target 'thoughtctltestTests' do
     inherit! :search_paths
     # Pods for testing

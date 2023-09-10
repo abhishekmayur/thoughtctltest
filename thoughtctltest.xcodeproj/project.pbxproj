@@ -17,6 +17,8 @@
 		10F7442F2AADCD8E00066309 /* thoughtctltestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F7442E2AADCD8E00066309 /* thoughtctltestTests.swift */; };
 		10F744392AADCD8E00066309 /* thoughtctltestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F744382AADCD8E00066309 /* thoughtctltestUITests.swift */; };
 		10F7443B2AADCD8E00066309 /* thoughtctltestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F7443A2AADCD8E00066309 /* thoughtctltestUITestsLaunchTests.swift */; };
+		10F744502AADE66800066309 /* ImagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F7444E2AADE66800066309 /* ImagesTableViewCell.swift */; };
+		10F744512AADE66800066309 /* ImagesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10F7444F2AADE66800066309 /* ImagesTableViewCell.xib */; };
 		316DB8DB262EED412EED694E /* Pods_thoughtctltest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8700C9E4CE30FC52E322E14 /* Pods_thoughtctltest.framework */; };
 		B2F2158CD7D416F2358AEEFC /* Pods_thoughtctltestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 812B530C529071D07732A9C6 /* Pods_thoughtctltestTests.framework */; };
 		BEBC78C745B0E55E98D912EB /* Pods_thoughtctltest_thoughtctltestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A745634E2352C0852D7D16D3 /* Pods_thoughtctltest_thoughtctltestUITests.framework */; };
@@ -55,6 +57,8 @@
 		10F744342AADCD8E00066309 /* thoughtctltestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = thoughtctltestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10F744382AADCD8E00066309 /* thoughtctltestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thoughtctltestUITests.swift; sourceTree = "<group>"; };
 		10F7443A2AADCD8E00066309 /* thoughtctltestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thoughtctltestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		10F7444E2AADE66800066309 /* ImagesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesTableViewCell.swift; sourceTree = "<group>"; };
+		10F7444F2AADE66800066309 /* ImagesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagesTableViewCell.xib; sourceTree = "<group>"; };
 		5C7D766552B82E565A4B5AE9 /* Pods-thoughtctltestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thoughtctltestTests.debug.xcconfig"; path = "Target Support Files/Pods-thoughtctltestTests/Pods-thoughtctltestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCB208B2D52B94145C53EF2 /* Pods-thoughtctltest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thoughtctltest.release.xcconfig"; path = "Target Support Files/Pods-thoughtctltest/Pods-thoughtctltest.release.xcconfig"; sourceTree = "<group>"; };
 		6F6690F7BA23A25D0104BFEF /* Pods-thoughtctltestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thoughtctltestTests.release.xcconfig"; path = "Target Support Files/Pods-thoughtctltestTests/Pods-thoughtctltestTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -131,6 +135,7 @@
 				10F744142AADCD8B00066309 /* AppDelegate.swift */,
 				10F744162AADCD8B00066309 /* SceneDelegate.swift */,
 				10F744182AADCD8B00066309 /* ViewController.swift */,
+				10F7444D2AADE64300066309 /* cell */,
 				10F7441A2AADCD8B00066309 /* Main.storyboard */,
 				10F744202AADCD8D00066309 /* Assets.xcassets */,
 				10F744222AADCD8D00066309 /* LaunchScreen.storyboard */,
@@ -155,6 +160,15 @@
 				10F7443A2AADCD8E00066309 /* thoughtctltestUITestsLaunchTests.swift */,
 			);
 			path = thoughtctltestUITests;
+			sourceTree = "<group>";
+		};
+		10F7444D2AADE64300066309 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				10F7444E2AADE66800066309 /* ImagesTableViewCell.swift */,
+				10F7444F2AADE66800066309 /* ImagesTableViewCell.xib */,
+			);
+			path = cell;
 			sourceTree = "<group>";
 		};
 		3E37220D71F0943DFAA21C0F /* Pods */ = {
@@ -280,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10F744242AADCD8D00066309 /* LaunchScreen.storyboard in Resources */,
+				10F744512AADE66800066309 /* ImagesTableViewCell.xib in Resources */,
 				10F744212AADCD8D00066309 /* Assets.xcassets in Resources */,
 				10F7441C2AADCD8B00066309 /* Main.storyboard in Resources */,
 			);
@@ -413,6 +428,7 @@
 				10F7441F2AADCD8B00066309 /* thoughtctltest.xcdatamodeld in Sources */,
 				10F744152AADCD8B00066309 /* AppDelegate.swift in Sources */,
 				10F744172AADCD8B00066309 /* SceneDelegate.swift in Sources */,
+				10F744502AADE66800066309 /* ImagesTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,6 +609,7 @@
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = thoughtctltest/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "thoughtctl application like to acces your image gallery?";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -622,6 +639,7 @@
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = thoughtctltest/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "thoughtctl application like to acces your image gallery?";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
